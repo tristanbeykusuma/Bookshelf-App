@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Aplikasi Rak Buku</title>
+  <link rel='icon' type="image/x-icon" href="asset/icon-web.svg">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header_box">
+  <h1 class="header_box_opening">Aplikasi Rak Buku</h1>
+</header>
+<main>
+  <div id="left_side">
+    <div class="book_input">
+      <h2>Masukkan Buku Baru</h2>
+      <hr>
+      <form class="form" action="#" id="form_input">
+        <div class="form_segment">
+          <label for="bookTitle">Masukkan judul buku</label>
+          <input id="bookTitle" name="bookTitle" type="text" placeholder="Judul buku" required>
+        </div>
+        <div class="form_segment">
+          <label for="bookAuthor">Masukkan penulis buku</label>
+          <input id="bookAuthor" name="bookAuthor" type="text" placeholder="Penulis buku" required>
+        </div>
+        <div class="form_segment">
+          <label for="bookYear">Masukkan tahun keluar</label>
+          <input id="bookYear" name="bookYear" type="number" placeholder="Tahun keluar" required>
+        </div>
+        <div class="form_segment_inline">
+          <label for="bookComplete">Selesai/tidak</label>
+          <input id="bookComplete" name="bookComplete" type="checkbox">
+        </div>
+        <input id="inputSubmit" value="Submit Data" name="Submit" type="submit" class="book_submit_call">
+      </form>
+    </div>
+
+    <div class="book_search">
+      <h3>Cari Buku Menurut Judul</h3>
+      <hr>
+      <form class="form" id="form_search">
+        <input id="searchBookTitle" type="text">
+        <input id="searchSubmit" value="Search" type="submit" class="book_submit_call">
+        <label id="searchLabel" for="searchBookTitle"></label>
+      </form>
+    </div>
+  </div>
+
+  <div id="right_side">
+    <div class="book_container">
+      <h2>Belum Selesai Dibaca</h2>
+      <hr>
+      <div id="justAddedBooks" class="book_list">
+      </div>
+    </div>
+
+    <div class="book_container">
+      <h2>Selesai Dibaca</h2>
+      <hr>
+      <div id="justCompletedBooks" class="book_list">
+      </div>
+    </div>
+  </div>
+</main>
+<footer>
+  <h4>Submission : Tugas Akhir Aplikasi Pengelolaan Data Bookshelf @ Dicoding Academy</h4>
+</footer>
+<script src="https://kit.fontawesome.com/3889423b27.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
